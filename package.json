@@ -1,0 +1,20 @@
+{
+  "name": "hyperhtml-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node src",
+    "test": "eslint src"
+  },
+  "author": "Joshua Jacobson",
+  "license": "ISC",
+  "dependencies": {
+    "hyperhtml": "^0.9.0",
+    "prettier": "^0.22.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.3.2"
+  }
+}
