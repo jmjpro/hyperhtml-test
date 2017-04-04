@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src"
+    "test": "echo TODO",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "author": "Joshua Jacobson",
   "license": "ISC",
@@ -15,6 +22,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
-    "babel-preset-env": "^1.3.2"
+    "babel-preset-env": "^1.3.2",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0"
   }
 }

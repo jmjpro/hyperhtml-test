@@ -10,6 +10,4 @@ function tick(render) {
   `;
 }
 
-setInterval(tick, 1000,
-  hyperHTML.bind(document.getElementById('root'))
-);
+setInterval(tick, 1000, hyperHTML.bind(document.getElementById('root')));
